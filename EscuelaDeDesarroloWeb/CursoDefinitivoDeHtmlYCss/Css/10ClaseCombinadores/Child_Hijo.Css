@@ -1,0 +1,26 @@
+/*Se lee la etiqueta "p" que sea hija directa de una etiqueta "div" 
+osea que este justo despues de una etiqueta div en este caso podemos
+ver que hay 4 p de las cuales HIJAS DIRECTAS son solamente las 
+ultimas dos y esta tiene una gran diferencia con adjacente
+sibiling que es el hecho de que hija no necesaria mente tiene que estar
+en la misma linea de codigo sino que con el hecho de encontrarse
+directamente dentro de la etiqueta que queremos sea el padre "div"
+ya la toma*/
+
+/*Si queres volver a entederlo tan solo saca los "/*" de lo que esta abajo
+asi lo volves a recordar*/
+/* div > p{
+    color: red;
+} */
+
+
+/*Esto es decendiente, se lee todas las etiquetas p que esten dentro 
+de una etiqueta que tenga la clase div este es el mas comun y el
+que mas vas a utilizar, si ves en la pagina web estan todas en rojo
+y esto es porque le estamos diciendo que a todas las etiquetas 
+"p" que esten adentro de un div las quiero en rojo, esta no indiscrimina 
+si estan directamente relacionadas o hay otras etiquetas de por medio 
+y esa es la razon de porque estan todas en rojo*/
+div p {
+    color: red;
+}

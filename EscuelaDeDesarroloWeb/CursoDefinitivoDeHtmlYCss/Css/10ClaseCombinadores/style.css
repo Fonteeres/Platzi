@@ -1,0 +1,8 @@
+/* el signo "+" en css se utiliza para hacer un hermano cercano,
+en este caso le estamos diciendo a css que para toda p que este cerca
+"+" de un h2, la quiero en color rojo  y la razon por la cual el 2do
+p no esta de color rojo es porque el adjacent sibiling (hermano cercano)
+se aplica al que esta inmediatamente despues y no al que este antes*/
+h2 + p {
+    color: red;
+}

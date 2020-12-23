@@ -1,0 +1,11 @@
+/* El simbolo "~" es conocido en Css como el General Sibiling o 
+Hermano General en este caso todas las etiquetas en div son 
+hermanos generales (Ya que estan en la misma linea), asi que le estamos 
+diciendo es que para toda p que tenga un hermano general "~" ponla en rojo, 
+a diferencia de hermano adjacente este no necestia que este inmediatamente
+despues asi que por el simpre hecho de que haya un h2 en la misma linea en
+todo el contenedor de div esto hace a todas las etiquetas de p un hermano
+general de h2 */
+h2 ~ p{
+    color: red;
+}
