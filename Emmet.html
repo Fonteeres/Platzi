@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+<!-- Clase resumen de emmet, emmet nos sirve para abreviar nuestro codigo y hacernos escribir la mayor cantidad de codigo con el menor esfuerzo posible -->    
+
+<!-- Ejemplo n°1 -->
+<!-- si queremos crear una lista desordenada con 10 elementos ¿como lo hariamos? -->
+<!-- Lo tipico es poner la etiqueta ul y luego los li uno por uno pero con emmet podemos hacerlo todo de una vez -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<!-- para lograr esto ponemos asi la etiqueta ul > (que tenga dentro) li y queremos que sean 10 por ende lo multiplicamos "*" por la cantidad -->
+<!-- ul>li*10 asi te quedaria -->
+<!-- Ejemplo N°2 -->
+<!-- ahora que pasa si quiero agregarle una clase a todos los li? bueno seria asi -->
+<ul>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+</ul>
+<!-- utilizamos la misma abreviacion pero le agregamos un "." y el nombre de la clase antes de la multiplicacion -->
+<!-- ul>li.elemento*10 -->
+<!-- Ejemplo N°3 -->
+<!-- y si quiero agregarle un ID y una clase a mi ul? bueno quedaria asi -->
+<ul id="my-list" class="container">
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+    <li class="elemento"></li>
+</ul>
+<!-- se haria lo mismo que la anterio solo que se le agregla el "#" para el id como si fuera css y el "." antes del ">" -->
+<!-- ul#my-list.container>li.elemento*10 -->
+<!-- Ejemplo N°4 -->
+<!-- ahora si quisiera que todas las clases "elementos" de mi ul tuviera una distincion de un numero?  se veria asi-->
+<ul id="my-list" class="container">
+    <li class="elemento01"></li>
+    <li class="elemento02"></li>
+    <li class="elemento03"></li>
+    <li class="elemento04"></li>
+    <li class="elemento05"></li>
+    <li class="elemento06"></li>
+    <li class="elemento07"></li>
+    <li class="elemento08"></li>
+    <li class="elemento09"></li>
+    <li class="elemento10"></li>
+</ul>
+<!-- utilizamos el "$" para que sucedad esto -->
+<!-- ul#my-list.container>li.elemento$$*10 -->
+<!-- Ejemplo N°5 -->
+<!-- y si quisiera que para distingirlos en la pagina le puisiera nros y nombres a los elementos?  se veria asi-->
+<ul id="my-list" class="container">
+    <li class="elementos01">01</li>
+    <li class="elementos02">02</li>
+    <li class="elementos03">03</li>
+    <li class="elementos04">04</li>
+    <li class="elementos05">05</li>
+    <li class="elementos06">06</li>
+    <li class="elementos07">07</li>
+    <li class="elementos08">08</li>
+    <li class="elementos09">09</li>
+    <li class="elementos10">10</li>
+</ul>
+<!-- se utiliza de nuevo el $ y se le agrega los "{}" y con los corchetes agregamos texto a nuestras etiquetas -->
+<!-- ul#my-list.container>li.elementos$${$$}*10 -->
+<!-- para otro ejemplo mira esto -->
+<p>01</p>
+<p>02</p>
+<p>03</p>
+<p>04</p>
+<p>05</p>
+<p>06</p>
+<p>07</p>
+<p>08</p>
+<p>09</p>
+<p>10</p>
+<!-- p{$$}*10 -->
+<!-- Ejemplo N°6 -->
+<!-- podemos hacer esto de mil maneras inclusive con etiquetas mas grandes -->
+<html>
+<head>
+    <title>emmet</title>
+</head>
+<body>
+    <div class="container">
+        <li></li>
+    </div>
+</body>
+</html>
+<!-- html>(head>title{emmet})+(body>div.container>li.elementos) -->
+</html>

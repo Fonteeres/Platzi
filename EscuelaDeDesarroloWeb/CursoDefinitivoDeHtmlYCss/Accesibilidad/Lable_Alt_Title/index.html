@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <!-- Resumen de accesibilidad -->
+            <!-- Label es una buena practica para un formulario ya que te permite que una persona con problemas de vision solo tenga que poner
+            el cursos sobre la etiqueta label (osea no necesariamente sobre la etiqueta input) y que esta lo redirija a la etiqueta input y pueda
+            empezar a rellenar el formulario de una manera mas facil y accesible-->
+            <label for="Name">
+                <span>¿Cual es tu Nombre?</span>
+                <input type="text" required id="Name" autocomplete="name">
+            </label>
+            <label for="started-stuyding">
+                <span>¿Cuando comenzaste a estudiar?</span>
+                <input type="date" id="started-stuyding" required>
+            </label>
+            <label for="time-to-study">
+                <span>¿Cuanto tiempo estudias?</span>
+                <input type="time" id="time-to-study" required>
+            </label>    
+        </form>
+        <!-- Para una foto alt sirve para personas con problemas de vision asi cuando el document reader se pose sobre la etiqueta img 
+        pueda leer el alt y asi darle una mejor descripcion al no vidente de lo que esa imagen contiene -->
+        <!-- title en una etiquta imagen hace que cuando el cursos se encuentra sobre la imagen esta reciba una descripcion del mismo -->
+        <section>
+            <img src="./pexels-fillipe-gomes-5588918.jpg" 
+            alt="Chica apoyada en otra mujer"
+            title="Mujer afroamericana apoyando la cabeza sobre el hombro de otra mujer"
+            >
+        </section>
+    </main>
+</body>
+</html>

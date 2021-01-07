@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <!-- esta forma de poner imagenes es poco practica -->
+    <!-- <main>
+        <div class="picture">
+            <img src="" alts="">
+        </div>
+    </main> -->
+    <!-- picture -->
+    <main>
+        <!-- la etiqueta picture es el contenerdor de las etiquetas de imagenes
+        este te permite trabajar de una manera mas facil y fluida a comparacion del
+        otro ejemplo que acabo de mostrar, usar picture es una buena practica -->
+        <picture>
+            <!-- source te permite agregar mas imagenes 
+            cuando usas esta etiqueta la imagen mas pesada siempre tiene
+            que ir primero, hacer esto le da una mejor experiencia al usuario -->
+            <source srcset="./Img/Large.jpg" media="(min-width:1300px)">
+            <source srcset="./Img/Medium.jpg" media="(min-width:1000px)">
+            <img src="./Img/Small.jpg" alt="Es una imagen de ejemplo">
+        </picture>
+    </main>
+   
+</body>
+</html>
