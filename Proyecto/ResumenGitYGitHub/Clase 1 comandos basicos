@@ -5,7 +5,13 @@ mkdir: Make directory: crea un directorio (una carpeta) en donde te encuentres e
 touch: crea un archivo el tipo que vos le digas
 pwd: te muestra la ruta de tu directorio
 ls: te muestra todas las carpetas y archivos que se encuentran en tu directorio si le agregas -al te muestra de una manera ordenada todos los archivos inclusos los ocultos "a" muestra los archivos ocultos, "l" los ordena pueden ser usados por separado
-history: Te muestra la hisotria de todos los comandos que algunas vez usaste
-rm: remove borra el archivo que estas llamando, aunque hay que tener cuiado porque podes borrar todo el disco duro
+history: Te muestra el hisotrial de todos los comandos que algunas vez usaste
+rm: remove, borra el archivo que estas llamando, aunque hay que tener cuiado porque podes borrar todo el disco duro
 git add: agrega el archivos que selecionaste al staging que es un espacio en la memoria ram donde se van a agregar todos los cambios que le hagas a tu archivo 
 git commit -m "": envia al repositorio (master) de git el archivo o los archivos que estaban en staging entre las comillas agregas un mensaje de los cambios que hiciste
+git init: crea el repositorio de git en la carpeta en la que te encuentres en ese momento
+git status: muestra el status del proyecto en el momento, te muestra en rama estas y tambien si hay algun archivo que no esta trakeado
+git log + "archivo": te muestra la historia de todos los cambios del archivo al que estas llamado, tambien podemos usar git log --stat que nos muestra de una forma mucho mas detallada los cambios hechos entre los diferentes commits
+git diff + "nro de commit" + "numero de commit": haciendo esto podes comparar commits para ver los cambios que sufrio desde el primer commit al segundo commit
+git show: si queremos ver cambios entre la ultima version y la anterior a esa este es el comando que usamos 
+git diff y git show sirven para cuando tu codigo se rompe, poder ver cuales fueron los cambios que hicieron que se rompa

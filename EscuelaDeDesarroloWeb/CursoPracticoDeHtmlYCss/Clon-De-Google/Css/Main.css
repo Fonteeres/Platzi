@@ -136,6 +136,7 @@ footer ul {
     padding-left: 0;
 }
 footer .footer-left{
+    /* Justify-self es para alinear horizontalmente la posición del contenido dentro de su celda. */
     justify-self: left;
 
 }

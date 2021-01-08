@@ -1,2 +1,0 @@
- git init: crea el repositorio de git en la carpeta en la que te encuentres en ese momento
-git status: muestra el status del proyecto en el momento, te muestra en rama estas y tambien si hay algun archivo que no esta trakeado
