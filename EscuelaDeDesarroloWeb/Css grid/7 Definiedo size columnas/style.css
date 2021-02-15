@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr); 
+    column-gap: 30px;
+    row-gap: 50px;
+    gap: 10px;
+    height: 100vh;
+}
+.item {
+    background: lightblue;
+    padding: 10px;
+    border:  1px solid red;
+    
+}
+.item:nth-of-type(1){
+    background: blue;
+    /** grid-column start elije la linea en la que empezas tenes que tener el claro que grid no piensa en el cuadrado que armas si no en las lineas verticales que utilizas por eso en column end el nro es 3 ya que esta toma desde la primera linea vertical la cual se encuentra a la izquierda del espacio se puede apreciar en estas lineas " | | | " */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item:nth-of-type(8){
+    /** grid-column: 1 / span 2; span si entiende de espacios y por eso si le pones span 2 solo va a ocupar dos epacios de columnas y no toma en referencia las lineas */
+    grid-column:1/ -1 ;
+}   
+.item:nth-of-type(7){
+    grid-column: 2/4;
+}

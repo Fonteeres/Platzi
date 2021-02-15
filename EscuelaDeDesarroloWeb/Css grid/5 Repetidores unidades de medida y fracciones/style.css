@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    /* display grid genera las diviciones entre los diferentes elementos que tengas en tu hmtl */
+    display: grid;
+    /* grid-template-columns  genera las columnas entre los items de container los porcentajes determinana la cantidad de columnas que va a tener tu elemento podes usar coalquier tipo de medida para tus columnas */
+    /* grid-template-columns: 25% 50% 25%; */
+    /* rows en ingles significna filas en este caso grid-template-rows cumple el mismo objetivo que grid-template-columns */
+    /* grid-template-rows: 300px 300px;  */
+    /* grid-template: filas / columnas;  es una forma abreviada de utilizar rows y columns el orden para ponerlo es como se muestra al principio*/
+    /* repeat es una funcion que sirve para que no tengas que poner muchas veces el mismo codigo en vez de poner cuatro veces 1fr lo haces con la funcion repeat */
+    grid-template: 300px 100px 100px/ repeat(4, minmax(200px, 1fr));
+    column-gap: 30px;
+    row-gap: 50px;
+    /* column-gap  */
+    /* row-gap */
+    /* gap: filas columnas; con grid-gap podes darle espacios a tus elementos en grid, de esta forma el espacio que ocupa a diferencia de ultilizar margin es que el segundo reduce el espacio del contenedor para que el margin pueda funcionar y grid-gap solo los mueve a los contenedores sin reducir el espacio entre ellos */
+    /* fr es una fraccion, distribuye el espacio en formas iguales */
+    gap: 10px;
+    
+}
+.item {
+    background: lightblue;
+    padding: 10px;
+    border:  1px solid red;
+    
+}
+.item:nth-of-type(4){
+    background: blue;
+    overflow: auto;
+/*  display: subgrid;  este display aunque no esta disponible aun 2021 enero, heredaria el display grid de su elemento padre */
+/* display:inline-grid; hace un grid en linea sin filas ni columnas */
+    display: grid;
+    grid-template: 50px 50px 50px/ 200px 200px 200px;
+    
+}
+.item .item{
+    background: yellow;
+}

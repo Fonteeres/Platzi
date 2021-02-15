@@ -1,17 +1,35 @@
 Resumen de Git y Git Hub
 Comandos y sus funciones:
+
 cd: Change directory: sirve para navegar entre los directorios, si le agregas un "." y estas en un archivo volves al directorio de ese archivo y si pones dos ".." volves al directorio principal del archivo
+
 mkdir: Make directory: crea un directorio (una carpeta) en donde te encuentres en ese momento
+
 touch: crea un archivo el tipo que vos le digas
+
 pwd: te muestra la ruta de tu directorio
+
 ls: te muestra todas las carpetas y archivos que se encuentran en tu directorio si le agregas -al te muestra de una manera ordenada todos los archivos inclusos los ocultos "a" muestra los archivos ocultos, "l" los ordena pueden ser usados por separado
+
 history: Te muestra el hisotrial de todos los comandos que algunas vez usaste
+
 rm: remove, borra el archivo que estas llamando, aunque hay que tener cuiado porque podes borrar todo el disco duro
+
 git add: agrega el archivos que selecionaste al staging que es un espacio en la memoria ram donde se van a agregar todos los cambios que le hagas a tu archivo 
+
 git commit -m "": envia al repositorio (master) de git el archivo o los archivos que estaban en staging entre las comillas agregas un mensaje de los cambios que hiciste
+
 git init: crea el repositorio de git en la carpeta en la que te encuentres en ese momento
+
 git status: muestra el status del proyecto en el momento, te muestra en rama estas y tambien si hay algun archivo que no esta trakeado
+
 git log + "archivo": te muestra la historia de todos los cambios del archivo al que estas llamado, tambien podemos usar git log --stat que nos muestra de una forma mucho mas detallada los cambios hechos entre los diferentes commits
+
 git diff + "nro de commit" + "numero de commit": haciendo esto podes comparar commits para ver los cambios que sufrio desde el primer commit al segundo commit
+
 git show: si queremos ver cambios entre la ultima version y la anterior a esa este es el comando que usamos 
+
 git diff y git show sirven para cuando tu codigo se rompe, poder ver cuales fueron los cambios que hicieron que se rompa
+
+git reset: volvemos nuestro archivo o nuestros archivos a una version anterior del commit que lo indica ya sea el ante penultimo commit o el primer commit que hiciste
+con --soft borramos los cambios pero los dejamos en staging para que asi si nos arrepentimos podemos vovler a hacer el commit y tener todo de nuevo o --hard le cual borra absolutamente todo lo que haya pasado despues del commit indicado y no hay marcha atras

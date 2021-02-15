@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    /* display grid genera las diviciones entre los diferentes elementos que tengas en tu hmtl */
+    display: grid;
+    /* grid-template-columns genera las columnas entre los items de container los porcentajes determinana la cantidad de columnas que va a tener tu elemento podes usar coalquier tipo de medida para tus columnas */
+    grid-template-columns: 25% 50% 25%;
+}
+.item {
+    background: lightblue;
+    padding: 10px;
+    border:  1px solid red;
+}
